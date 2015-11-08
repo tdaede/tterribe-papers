@@ -46,32 +46,36 @@
 
 \title
 {\large
-\textbf{Daala}
+\textbf{Daala: A Perceptually-Driven Next Generation Video Codec}
 }
 
-
 \author{%
-Author One$^{\ast}$, Author Two$^{\dag}$, and Author Three$^{\ast}$\\[0.5em]
+Author One$^{\ast}$, Jean-Marc Valin$^{\ast\dag}$,
+ and Timothy B. Terriberry$^{\ast\dag}$\\[0.5em]
 {\small\begin{minipage}{\linewidth}\begin{center}
 \begin{tabular}{ccc}
-$^{\ast}$Institution One & \hspace*{0.5in} & $^{\dag}$Institution Two \\
-Street Address One && Street Address Two \\
-City, State, ZIP, Country && City, State, ZIP, Country\\
-\url{email@address} && \url{email@address}
+$^{\ast}$Xiph.Org Foundation & \hspace*{0.5in} & $^{\dag}$Mozilla \\
+21 College Hill Road && 331 E. Evelyn Ave. \\
+Somerville, MA 02144, USA && Mountain View, CA 94041, USA\\
+\url{tterribe@xiph.org} && %\url{email@address}
 \end{tabular}
 \end{center}\end{minipage}}
 }
-
 
 \maketitle
 \thispagestyle{empty}
 
 
 \begin{abstract}
-The abstract describes concisely and clearly the main contributions of
-the paper. It should not contain math equations or citations, to ensure the
-abstract is self-contained and readable if converted to ASCII text.
-The abstract should contain about 100 to 150 words.
+The Daala project is an attempt to design a royalty-free video codec capable of
+ competing with the best patent-encumbered codecs.
+Part of our strategy is to replace core tools of traditional video codecs with
+ alternative approaches, many of them designed to take perceptual aspects into
+ account, rather than optimizing for simple metrics like PSNR.
+This paper documents some of our experiences with these tools, which ones
+ worked and which did not, and what we've learned from them.
+The result is a codec which compares favorably with HEVC on still images, and
+ is on a path to do so for video as well.
 \end{abstract}
 
 \Section{Introduction}
