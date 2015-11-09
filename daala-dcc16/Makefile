@@ -1,6 +1,8 @@
 # Makefile to generate the dissertation from its sources.
 # Requires transfig and pdflatex.
 
+SHELL = /bin/bash
+
 NAME = daala-dcc16
 
 PAPER_SRCS = $(NAME).tex $(NAME).bib
